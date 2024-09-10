@@ -12,4 +12,4 @@ Here are some ideas to get you started:
 
 - 🔭 I’m currently working on my management app
 
-<iframe src="https://giphy.com/embed/bodHdFtqWbJDi" width="480" height="355" style="" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/hbo-the-sopranos-bodHdFtqWbJDi">via GIPHY</a></p>
+<img src="https://giphy.com/embed/bodHdFtqWbJDi" width="480" height="355" style="" frameBorder="0" class="giphy-embed" allowFullScreen>
