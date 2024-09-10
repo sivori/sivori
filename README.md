@@ -11,5 +11,3 @@
 Here are some ideas to get you started:
 
 - 🔭 I’m currently working on my management app
-
-<img src="https://giphy.com/bodHdFtqWbJDi" width="480" height="355" style=""/>
