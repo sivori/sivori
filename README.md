@@ -1,9 +1,1 @@
-### Hi there 👋
-
-<h1 align="center">
-
-[![GitHub Streak](https://streak-stats.demolab.com?user=sivori&theme=vue)](https://git.io/streak-stats)
-
-![Sivori's github stats](https://github-readme-stats.vercel.app/api?username=sivori&show_icons=true)
-[![stats](https://github-readme-stats.vercel.app/api/wakatime?username=sivori)](https://github.com/anuraghazra/github-readme-stats)
-</h1>
+![Metrics](https://metrics.lecoq.io/sivori?template=classic&isocalendar=1&wakatime=1&base=header%2C%20activity%2C%20community%2C%20repositories%2C%20metadata&base.indepth=false&base.hireable=false&base.skip=false&isocalendar=false&isocalendar.duration=half-year&wakatime=false&wakatime.url=https%3A%2F%2Fwakatime.com&wakatime.user=sivori&wakatime.sections=time%2C%20projects%2C%20projects-graphs%2C%20languages%2C%20languages-graphs%2C%20editors%2C%20os&wakatime.days=7&wakatime.limit=5&wakatime.languages.other=false&wakatime.repositories.visibility=all&config.timezone=America%2FChicago)
