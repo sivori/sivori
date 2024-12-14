@@ -5,9 +5,8 @@
 <!--START_SECTION:waka-->
 
 ```txt
-Markdown     3 hrs 12 mins   ████████████████████████░   96.27 %
-Astro        7 mins          █░░░░░░░░░░░░░░░░░░░░░░░░   03.58 %
-JavaScript   0 secs          ░░░░░░░░░░░░░░░░░░░░░░░░░   00.16 %
+Markdown   1 hr 44 mins    ███████████████████▒░░░░░   77.22 %
+Astro      30 mins         █████▓░░░░░░░░░░░░░░░░░░░   22.78 %
 ```
 
 <!--END_SECTION:waka-->
