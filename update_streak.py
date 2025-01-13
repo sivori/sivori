@@ -5,23 +5,49 @@ import re
 from collections import defaultdict
 
 def get_contribution_streak(user):
-    # Get user's events
-    events = user.get_events()
     contribution_dates = defaultdict(bool)
     today = datetime.now(timezone.utc).date()
     
+    # Get all pages of events
+    events = user.get_events()
+    print(f"Fetching events for user {user.login}...")
+    
     # First, mark all dates with contributions
+    page_count = 0
     for event in events:
+        page_count += 1
         if event.type in ['PushEvent', 'CreateEvent', 'PullRequestEvent', 'IssuesEvent']:
-            contribution_dates[event.created_at.date()] = True
+            event_date = event.created_at.date()
+            contribution_dates[event_date] = True
+            print(f"Found contribution on {event_date}: {event.type}")
+            
+        # GitHub's API typically returns max 300 events (10 pages of 30 events)
+        if page_count >= 300:
+            break
     
     # Calculate current streak
     current_streak = 0
     current_date = today
     
-    while contribution_dates[current_date]:
-        current_streak += 1
-        current_date = current_date - timedelta(days=1)
+    # Look back up to 365 days
+    for i in range(365):
+        check_date = today - timedelta(days=i)
+        if contribution_dates[check_date]:
+            current_streak += 1
+            print(f"Counting {check_date} in streak")
+        else:
+            if current_streak > 0:  # Only print if we've started counting
+                print(f"Streak breaks at {check_date} (no contributions)")
+            break
+    
+    print(f"Final streak count: {current_streak}")
+    
+    # Print full contribution timeline for verification
+    print("\nFull contribution timeline for the last 14 days:")
+    for i in range(14):
+        check_date = today - timedelta(days=i)
+        status = "✓" if contribution_dates[check_date] else "✗"
+        print(f"{check_date}: {status}")
     
     return current_streak
 
@@ -41,6 +67,8 @@ def update_readme(streak_count):
     
     with open('README.md', 'w') as file:
         file.write(updated_content)
+    
+    print(f"Updated README.md with streak count: {streak_count}")
 
 def main():
     # Initialize GitHub client
