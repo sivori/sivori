@@ -1,21 +1,27 @@
 from github import Github
-from datetime import datetime, timezone
+from datetime import datetime, timezone, timedelta
 import os
 import re
+from collections import defaultdict
 
 def get_contribution_streak(user):
     # Get user's events
     events = user.get_events()
+    contribution_dates = defaultdict(bool)
     today = datetime.now(timezone.utc).date()
-    current_streak = 0
     
-    # Count consecutive days with contributions
+    # First, mark all dates with contributions
     for event in events:
-        event_date = event.created_at.date()
-        if (today - event_date).days > current_streak:
-            break
         if event.type in ['PushEvent', 'CreateEvent', 'PullRequestEvent', 'IssuesEvent']:
-            current_streak += 1
+            contribution_dates[event.created_at.date()] = True
+    
+    # Calculate current streak
+    current_streak = 0
+    current_date = today
+    
+    while contribution_dates[current_date]:
+        current_streak += 1
+        current_date = current_date - timedelta(days=1)
     
     return current_streak
 
