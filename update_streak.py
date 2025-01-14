@@ -3,34 +3,70 @@ from datetime import datetime, timezone, timedelta
 import os
 import re
 from collections import defaultdict
+import requests
+
+def get_contribution_data(token):
+    headers = {
+        'Authorization': f'bearer {token}',
+    }
+    
+    query = """
+    query($from: DateTime!, $to: DateTime!) {
+      viewer {
+        contributionsCollection(from: $from, to: $to) {
+          contributionCalendar {
+            totalContributions
+            weeks {
+              contributionDays {
+                contributionCount
+                date
+              }
+            }
+          }
+        }
+      }
+    }
+    """
+    
+    # Query for last 365 days
+    today = datetime.now(timezone.utc)
+    from_date = (today - timedelta(days=365)).isoformat()
+    to_date = today.isoformat()
+    
+    variables = {
+        'from': from_date,
+        'to': to_date
+    }
+    
+    response = requests.post(
+        'https://api.github.com/graphql',
+        json={'query': query, 'variables': variables},
+        headers=headers
+    )
+    
+    return response.json()
 
 def get_contribution_streak(user):
     contribution_dates = defaultdict(bool)
     today = datetime.now(timezone.utc).date()
     
-    # Get all pages of events
-    events = user.get_events()
-    print(f"Fetching events for user {user.login}...")
+    # Get contribution data from GraphQL API
+    token = os.environ['GITHUB_TOKEN']
+    data = get_contribution_data(token)
     
-    # First, mark all dates with contributions
-    page_count = 0
-    for event in events:
-        page_count += 1
-        if event.type in ['PushEvent', 'CreateEvent', 'PullRequestEvent', 'IssuesEvent']:
-            event_date = event.created_at.date()
-            contribution_dates[event_date] = True
-            print(f"Found contribution on {event_date}: {event.type}")
-            
-        if page_count >= 300:
-            break
+    # Parse the contribution data
+    weeks = data['data']['viewer']['contributionsCollection']['contributionCalendar']['weeks']
+    for week in weeks:
+        for day in week['contributionDays']:
+            date = datetime.strptime(day['date'], '%Y-%m-%d').date()
+            if day['contributionCount'] > 0:
+                contribution_dates[date] = True
+                print(f"Found contributions on {date}: {day['contributionCount']}")
     
     # Calculate current streak
     current_streak = 0
-    longest_streak = 0
-    current_date = today
-    
-    # Look back up to 365 days
     streak_active = False
+    
     for i in range(365):
         check_date = today - timedelta(days=i)
         
