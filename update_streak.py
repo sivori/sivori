@@ -21,24 +21,33 @@ def get_contribution_streak(user):
             contribution_dates[event_date] = True
             print(f"Found contribution on {event_date}: {event.type}")
             
-        # GitHub's API typically returns max 300 events (10 pages of 30 events)
         if page_count >= 300:
             break
     
     # Calculate current streak
     current_streak = 0
+    longest_streak = 0
     current_date = today
     
     # Look back up to 365 days
+    streak_active = False
     for i in range(365):
         check_date = today - timedelta(days=i)
+        
         if contribution_dates[check_date]:
             current_streak += 1
+            streak_active = True
             print(f"Counting {check_date} in streak")
         else:
-            if current_streak > 0:  # Only print if we've started counting
+            # If this is today or yesterday, continue the streak
+            if i <= 1 and current_streak > 0:
+                print(f"No contributions on {check_date}, but within 1-day grace period")
+                continue
+                
+            if streak_active:
                 print(f"Streak breaks at {check_date} (no contributions)")
-            break
+                streak_active = False
+                break
     
     print(f"Final streak count: {current_streak}")
     
