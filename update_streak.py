@@ -104,15 +104,29 @@ def update_readme(streak_count):
     with open('README.md', 'r') as file:
         content = file.read()
     
+    # Create compact retro ASCII art display
+    streak_ascii = f"""
+```
+╔══════════════════════════════════════════════════════╗
+║  ░██████╗████████╗██████╗░███████╗░█████╗░██╗░░██╗  ║
+║  ██╔════╝╚══██╔══╝██╔══██╗██╔════╝██╔══██╗██║░██╔╝  ║
+║  ╚█████╗░░░░██║░░░██████╔╝█████╗░░███████║█████═╝░  ║
+║  ░╚═══██╗░░░██║░░░██╔══██╗██╔══╝░░██╔══██║██╔═██╗░  ║
+║  ██████╔╝░░░██║░░░██║░░██║███████╗██║░░██║██║░╚██╗  ║
+║  ╚═════╝░░░░╚═╝░░░╚═╝░░╚═╝╚══════╝╚═╝░░╚═╝╚═╝░░╚═╝  ║
+║──────────────────────────────────────────────────────║
+║  LEVEL: {min(streak_count // 7, 99):>2}  ►  CURRENT: {streak_count:>3}  ►  RANK: {["ROOKIE", "CODER", "HACKER", "MASTER"][min(streak_count // 10, 3)]:>6}  ║
+╚══════════════════════════════════════════════════════╝
+```"""
+
     # Update the streak count in the README
     streak_pattern = r'Current Contribution Streak: \*\*\d+\*\*'
-    new_streak_text = f'Current Contribution Streak: **{streak_count}**'
+    new_streak_text = streak_ascii
     
     if re.search(streak_pattern, content):
         updated_content = re.sub(streak_pattern, new_streak_text, content)
     else:
-        # If the streak section doesn't exist, add it at the end
-        updated_content = f'{content}\n\n{new_streak_text}'
+        updated_content = f'{content}\n\n{streak_ascii}'
     
     with open('README.md', 'w') as file:
         file.write(updated_content)
