@@ -119,14 +119,22 @@ def update_readme(streak_count):
 ╚══════════════════════════════════════════════════════╝
 ```"""
 
-    # Update the streak count in the README
-    streak_pattern = r'Current Contribution Streak: \*\*\d+\*\*'
-    new_streak_text = streak_ascii
+
+    # Find the section markers
+    start_marker = '<!--START_SECTION:streak-->'
+    end_marker = '<!--END_SECTION:streak-->'
     
-    if re.search(streak_pattern, content):
-        updated_content = re.sub(streak_pattern, new_streak_text, content)
+    start_index = content.find(start_marker)
+    end_index = content.find(end_marker)
+    
+    if start_index != -1 and end_index != -1:
+        # Replace everything between the markers with the new content
+        before_section = content[:start_index + len(start_marker)]
+        after_section = content[end_index:]
+        updated_content = f'{before_section}\n\n{streak_ascii}\n\n{after_section}'
     else:
-        updated_content = f'{content}\n\n{streak_ascii}'
+        # If markers don't exist, append to the end
+        updated_content = f'{content}\n\n{start_marker}\n\n{streak_ascii}\n\n{end_marker}'
     
     with open('README.md', 'w') as file:
         file.write(updated_content)
