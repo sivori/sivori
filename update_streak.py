@@ -7,13 +7,13 @@ import requests
 
 def get_contribution_data(token):
     headers = {
-        'Authorization': f'bearer {token}',
+        'Authorization': f'Bearer {token}',
     }
     
     query = """
-    query($from: DateTime!, $to: DateTime!) {
+    query {
       viewer {
-        contributionsCollection(from: $from, to: $to) {
+        contributionsCollection {
           contributionCalendar {
             totalContributions
             weeks {
@@ -28,23 +28,27 @@ def get_contribution_data(token):
     }
     """
     
-    # Query for last 365 days
-    today = datetime.now(timezone.utc)
-    from_date = (today - timedelta(days=365)).isoformat()
-    to_date = today.isoformat()
-    
-    variables = {
-        'from': from_date,
-        'to': to_date
-    }
-    
     response = requests.post(
         'https://api.github.com/graphql',
-        json={'query': query, 'variables': variables},
+        json={'query': query},
         headers=headers
     )
     
-    return response.json()
+    print(f"Response status code: {response.status_code}")
+    print(f"Response headers: {response.headers}")
+    print(f"Response body: {response.text}")
+    
+    if response.status_code != 200:
+        print(f"Error from GitHub API: {response.status_code}")
+        print(f"Response: {response.text}")
+        raise Exception("Failed to fetch contribution data")
+    
+    data = response.json()
+    if 'errors' in data:
+        print(f"GraphQL Errors: {data['errors']}")
+        raise Exception("GraphQL query failed")
+        
+    return data
 
 def get_contribution_streak(user):
     contribution_dates = defaultdict(bool)
