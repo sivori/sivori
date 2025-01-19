@@ -151,7 +151,8 @@ def update_readme(streak_count):
     
     # Create content with both ASCII art and image
     streak_content = f"""
-```
+![GitHub Streak](assets/streak.png)
+
 ╔══════════════════════════════════════════════════════╗
 ║  ░██████╗████████╗██████╗░███████╗░█████╗░██╗░░██╗   ║
 ║  ██╔════╝╚══██╔══╝██╔══██╗██╔════╝██╔══██╗██║░██╔╝   ║
