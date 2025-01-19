@@ -171,5 +171,4 @@ cython_debug/
 .pypirc
 
 # Add these lines
-assets/
 fonts/
