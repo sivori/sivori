@@ -4,6 +4,8 @@ import os
 import re
 from collections import defaultdict
 import requests
+from PIL import Image, ImageDraw, ImageFont
+import os.path
 
 def get_contribution_data(token):
     headers = {
@@ -100,10 +102,68 @@ def get_contribution_streak(user):
     
     return current_streak
 
+def create_streak_image(streak_count):
+    """Create an image with the streak information"""
+    # Set up image dimensions
+    width = 800
+    height = 200
+    
+    # Create new image with dark background
+    image = Image.new('RGB', (width, height), color='#0D1117')
+    draw = ImageDraw.Draw(image)
+    
+    # Try to load custom font, fall back to default if not found
+    try:
+        # You'll need to provide these font files or use different ones
+        title_font = ImageFont.truetype('fonts/Roboto-Bold.ttf', 60)
+        stats_font = ImageFont.truetype('fonts/Roboto-Regular.ttf', 40)
+    except IOError:
+        # Fallback to default font
+        title_font = ImageFont.load_default()
+        stats_font = ImageFont.load_default()
+    
+    # Calculate level and rank
+    level = min(streak_count // 7, 99)
+    ranks = ["ROOKIE", "CODER", "HACKER", "MASTER"]
+    rank = ranks[min(streak_count // 10, 3)]
+    
+    # Draw streak title
+    draw.text((40, 30), 'GitHub Streak', fill='#58A6FF', font=title_font)
+    
+    # Draw stats
+    stats_y = 100
+    draw.text((40, stats_y), f'Level: {level}', fill='#C9D1D9', font=stats_font)
+    draw.text((250, stats_y), f'Current: {streak_count}', fill='#C9D1D9', font=stats_font)
+    draw.text((500, stats_y), f'Rank: {rank}', fill='#C9D1D9', font=stats_font)
+    
+    # Save image
+    os.makedirs('assets', exist_ok=True)
+    image_path = 'assets/streak.png'
+    image.save(image_path)
+    return image_path
+
 def update_readme(streak_count):
+    # Create the streak image
+    image_path = create_streak_image(streak_count)
+    
     with open('README.md', 'r') as file:
         content = file.read()
     
+    # Create content with both ASCII art and image
+    streak_content = f"""
+```
+╔══════════════════════════════════════════════════════╗
+║  ░██████╗████████╗██████╗░███████╗░█████╗░██╗░░██╗   ║
+║  ██╔════╝╚══██╔══╝██╔══██╗██╔════╝██╔══██╗██║░██╔╝   ║
+║  ╚█████╗░░░░██║░░░██████╔╝█████╗░░███████║█████═╝░   ║
+║  ░╚═══██╗░░░██║░░░██╔══██╗██╔══╝░░██╔══██║██╔═██╗░   ║
+║  ██████╔╝░░░██║░░░██║░░██║███████╗██║░░██║██║░╚██╗   ║
+║  ╚═════╝░░░░╚═╝░░░╚═╝░░╚═╝╚══════╝╚═╝░░╚═╝╚═╝░░╚═╝   ║
+║───────────────────────────────────────────────────-──║
+║  LEVEL: {min(streak_count // 7, 99):>2}  ►  CURRENT: {streak_count:>3}  ►  RANK: {["ROOKIE", "CODER", "HACKER", "MASTER"][min(streak_count // 10, 3)]:>6}    ║
+╚══════════════════════════════════════════════════════╝
+```"""
+
     # Create compact retro ASCII art display
     streak_ascii = f"""
 ```
@@ -118,7 +178,6 @@ def update_readme(streak_count):
 ║  LEVEL: {min(streak_count // 7, 99):>2}  ►  CURRENT: {streak_count:>3}  ►  RANK: {["ROOKIE", "CODER", "HACKER", "MASTER"][min(streak_count // 10, 3)]:>6}    ║
 ╚══════════════════════════════════════════════════════╝
 ```"""
-
 
     # Find the section markers
     start_marker = '<!--START_SECTION:streak-->'
