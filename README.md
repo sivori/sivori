@@ -19,7 +19,7 @@ JavaScript   23 mins         ██░░░░░░░░░░░░░░░
 ## 🚀 My Projects
 
 ### 📱 [app.plans.lol](https://app.plans.lol)
-A personal dashboard and iOS app for organizing daily life and tasks. Built with modern web technologies and focused on simplicity and productivity.
+A personal dashboard and [iOS app for organizing daily life and tasks](https://apps.apple.com/us/app/plans-lol/id6703607762). Built with modern web technologies and focused on simplicity and productivity.
 
 ### 📊 Analytics Bot
 A Slack bot that automatically posts Google Analytics and other key metrics directly to Slack channels. Helps teams stay informed with automated data insights.
