@@ -26,5 +26,5 @@ A Slack bot that automatically posts Google Analytics and other key metrics dire
 
 ### 🤖 Reading Agent
 
-A Python application that automatically monitors research sources like arXiv and PubMed, filters papers by topic, generates summaries using OpenAI, and emails digests to users. [Clone repo]([https://github.com/mentarch/reading-agent).
+A Python application that automatically monitors research sources like arXiv and PubMed, filters papers by topic, generates summaries using OpenAI, and emails digests to users. [Clone repo](https://github.com/mentarch/reading-agent).
 
