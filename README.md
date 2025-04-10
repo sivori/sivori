@@ -24,3 +24,7 @@ A personal dashboard and [iOS app for organizing daily life and tasks](https://a
 ### 📊 Analytics Bot
 A Slack bot that automatically posts Google Analytics and other key metrics directly to Slack channels. Helps teams stay informed with automated data insights.
 
+### 🤖 Reading Agent
+
+A Python application that automatically monitors research sources like arXiv and PubMed, filters papers by topic, generates summaries using OpenAI, and emails digests to users. [Clone repo]([url](https://github.com/mentarch/reading-agent)).
+
