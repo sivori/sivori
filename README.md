@@ -21,6 +21,10 @@ Markdown      4 mins          ▒░░░░░░░░░░░░░░░�
 ### 📱 [app.plans.lol](https://app.plans.lol)
 A personal dashboard and [iOS app for organizing daily life and tasks](https://apps.apple.com/us/app/plans-lol/id6703607762). Built with modern web technologies and focused on simplicity and productivity.
 
+### 📘 InboxLit
+
+A minimalist service that delivers one chapter (or part) of an ePub to your inbox each morning. Encourages consistent, bite-sized reading using a beautiful HTML email template and a reliable schedule.
+
 ### 📊 Analytics Bot
 A Slack bot that automatically posts Google Analytics and other key metrics directly to Slack channels. Helps teams stay informed with automated data insights.
 
