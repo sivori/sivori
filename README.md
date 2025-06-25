@@ -16,7 +16,7 @@ TOML    0 secs          ▒░░░░░░░░░░░░░░░░░�
 ## 🚀 My Projects
 
 ### 📱 [app.plans.lol](https://app.plans.lol)
-A personal dashboard and [iOS app for organizing daily life and tasks](https://apps.apple.com/us/app/plans-lol/id6703607762). Built with modern web technologies and focused on simplicity and productivity.
+A personal dashboard and [iOS app for organizing daily life and tasks](https://apps.apple.com/us/app/plans-lol/id6703607762). Focused on simplicity and productivity.
 
 ### 📘 InboxLit
 
