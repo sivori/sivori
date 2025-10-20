@@ -7,7 +7,9 @@
 <!--START_SECTION:waka-->
 
 ```txt
-Other   5 hrs 39 mins   █████████████████████████   100.00 %
+Other    8 hrs 3 mins    █████████████████████████   99.84 %
+Bash     0 secs          ░░░░░░░░░░░░░░░░░░░░░░░░░   00.15 %
+Python   0 secs          ░░░░░░░░░░░░░░░░░░░░░░░░░   00.01 %
 ```
 
 <!--END_SECTION:waka-->
