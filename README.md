@@ -3,7 +3,7 @@
 * 🐝 [Swarmcalendar](#) Sync Foursquare/Swarm check-ins to Google Calendar
 * ⚡️ [Incentives.work](https://incentives.work) Discover rebates, tax credits, grants, and loans for energy efficiency and renewable energy projects.
 * 📱 [app.plans.lol](https://app.plans.lol) A personal dashboard and [iOS app for organizing daily life and tasks](https://apps.apple.com/us/app/plans-lol/id6703607762).
-* 📘 [InboxLit] A minimalist service that delivers one chapter (or part) of an ePub to your inbox each morning. Encourages consistent, bite-sized reading using a beautiful HTML email template and a reliable schedule.
+* 📘 [InboxLit](#)A minimalist service that delivers one chapter (or part) of an ePub to your inbox each morning. Encourages consistent, bite-sized reading using a beautiful HTML email template and a reliable schedule.
 * 📊 [Slack Analytics Bot](#) A Slack bot that automatically posts Google Analytics and other key metrics directly to Slack channels. Helps teams stay informed with automated data insights.
 * 🤖 [Reading Agent](https://github.com/mentarch/reading-agent) Automatically monitors research sources like arXiv and PubMed, filters papers by topic, generates summaries using OpenAI, and emails digests to users. [Clone repo](https://github.com/mentarch/reading-agent).
 * 👥 [Team Leaders](#) Analyze your team's productivity via Azure DevOps integration.
