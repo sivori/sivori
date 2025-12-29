@@ -6,7 +6,7 @@
 * 📘 **InboxLit** A minimalist service that delivers one chapter (or part) of an ePub to your inbox each morning. Encourages consistent, bite-sized reading using a beautiful HTML email template and a reliable schedule.
 * 📊 [Slack Analytics Bot](#) A Slack bot that automatically posts Google Analytics and other key metrics directly to Slack channels. Helps teams stay informed with automated data insights.
 * 🤖 [Reading Agent](https://github.com/mentarch/reading-agent) Automatically monitors research sources like arXiv and PubMed, filters papers by topic, generates summaries using OpenAI, and emails digests to users. [Clone repo](https://github.com/mentarch/reading-agent).
-* Team Leaders Analyze your team's productivity via Azure DevOps integration.
+* 👥 [Team Leaders](#) Analyze your team's productivity via Azure DevOps integration.
 
 
 ## 🔥 Contribution Streak
