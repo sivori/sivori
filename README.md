@@ -1,20 +1,3 @@
-![](http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=sivori&theme=nightowl)
-
-## 🔥 Contribution Streak
-[![GitHub Streak](https://github-readme-streak-stats-murex-one.vercel.app?user=sivori&theme=nightowl&hide_border=true&card_width=700&card_height=200&ring=EBE011&fire=EB9B1B)](https://git.io/streak-stats)
-
-## ⏰ Weekly Development Breakdown
-<!--START_SECTION:waka-->
-
-```txt
-Other      15 hrs 12 mins  █████████████████████████   99.92 %
-Groff      0 secs          ░░░░░░░░░░░░░░░░░░░░░░░░░   00.04 %
-Markdown   0 secs          ░░░░░░░░░░░░░░░░░░░░░░░░░   00.03 %
-Bash       0 secs          ░░░░░░░░░░░░░░░░░░░░░░░░░   00.01 %
-```
-
-<!--END_SECTION:waka-->
-
 ## 🚀 My Projects
 
 ### ⚡️[Incentives.work](https://incentives.work)
@@ -37,4 +20,23 @@ A Python application that automatically monitors research sources like arXiv and
 ## Team Leaders
 
 Analyze your team's productivity via Azure DevOps integration.
+
+![](http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=sivori&theme=nightowl)
+
+## 🔥 Contribution Streak
+[![GitHub Streak](https://github-readme-streak-stats-murex-one.vercel.app?user=sivori&theme=nightowl&hide_border=true&card_width=700&card_height=200&ring=EBE011&fire=EB9B1B)](https://git.io/streak-stats)
+
+## ⏰ Weekly Development Breakdown
+<!--START_SECTION:waka-->
+
+```txt
+Other      15 hrs 12 mins  █████████████████████████   99.92 %
+Groff      0 secs          ░░░░░░░░░░░░░░░░░░░░░░░░░   00.04 %
+Markdown   0 secs          ░░░░░░░░░░░░░░░░░░░░░░░░░   00.03 %
+Bash       0 secs          ░░░░░░░░░░░░░░░░░░░░░░░░░   00.01 %
+```
+
+<!--END_SECTION:waka-->
+
+
 
