@@ -1,7 +1,6 @@
 ## 🚀 My Projects
 
-### ⚡️[Incentives.work](https://incentives.work)
-Discover rebates, tax credits, grants, and loans for energy efficiency and renewable energy projects. Search by state to find programs available to you.
+* ⚡️[Incentives.work](https://incentives.work) Discover rebates, tax credits, grants, and loans for energy efficiency and renewable energy projects.
 
 ### 📱 [app.plans.lol](https://app.plans.lol)
 A personal dashboard and [iOS app for organizing daily life and tasks](https://apps.apple.com/us/app/plans-lol/id6703607762). Focused on simplicity and productivity.
