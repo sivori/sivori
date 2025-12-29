@@ -6,7 +6,7 @@
 * 📱 [app.plans.lol](https://app.plans.lol) A personal dashboard and [iOS app for organizing daily life and tasks](https://apps.apple.com/us/app/plans-lol/id6703607762).
 * 📘 [InboxLit](https://github.com/sivori/InboxLit) A minimalist service that delivers one chapter (or part) of an ePub to your inbox each morning. 
 * 📊 [Slack Analytics Bot](#) A Slack bot that automatically posts Google Analytics and other key metrics directly to Slack channels.
-* 🤖 [Reading Agent](https://github.com/mentarch/reading-agent) Automatically monitors research sources like arXiv and PubMed and generates email summaries using OpenAI.
+* 🤖 [Reading Agent](https://github.com/mentarch/reading-agent) Automatically monitors research sources like arXiv and PubMed and generates email summaries.
 * 👥 [Team Leaders](#) Analyze your team's productivity via Azure DevOps integration.
 
 
