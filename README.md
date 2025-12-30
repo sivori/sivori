@@ -4,6 +4,7 @@
 * 🎫 [jira-cli](https://github.com/sivori/jira-cli) CLI for JIRA, inspired by gh - work with issues, sprints, and epics from the terminal.
 * 🪙 [TokenStatus](https://github.com/sivori/tokenstatus) A native macOS menubar app that tracks and displays real-time token usage and cost.
 * 📖 [Reader](https://github.com/sivori/reader) Voice reader for articles using ElevenLabs - Chrome extension and embeddable widget
+* 🎧 [ebookstream](https://github.com/sivori/ebookstream)Convert ebooks to an audio stream, on the fly.
 * 🥷 [ProductStalker](https://github.com/sivori/product-stalker)A browser extension to track product prices directly from the browser.
 * 🐝 [Swarmcalendar](https://github.com/sivori/swarmcalendar) Sync Foursquare/Swarm check-ins to Google Calendar
 * ⚡️ [Incentives.work](https://incentives.work) Discover rebates, tax credits, grants, and loans for energy efficiency and renewable energy projects.
