@@ -1,5 +1,6 @@
 ## 🚀 My Projects
 
+* ⚡️ [GitStreak](https://github.com/sivori/git-streak) macOS menubar app to track your git commit streak. 
 * 🎫 [jira-cli](https://github.com/sivori/jira-cli) CLI for JIRA, inspired by gh - work with issues, sprints, and epics from the terminal.
 * 🪙 [TokenStatus](https://github.com/sivori/tokenstatus) A native macOS menubar app that tracks and displays real-time token usage and cost.
 * 📖 [Reader](https://github.com/sivori/reader) Voice reader for articles using ElevenLabs - Chrome extension and embeddable widget
