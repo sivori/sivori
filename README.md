@@ -8,6 +8,7 @@
 * 🥷 [ProductStalker](https://github.com/sivori/product-stalker)A browser extension to track product prices directly from the browser.
 * 🐝 [Swarmcalendar](https://github.com/sivori/swarmcalendar) Sync Foursquare/Swarm check-ins to Google Calendar
 * ⚡️ [Incentives.work](https://incentives.work) Discover rebates, tax credits, grants, and loans for energy efficiency and renewable energy projects.
+* 💻 [cli.plans.lol](https://github.com/sivori/cli.plans.lol) A command-line interface for managing tasks that syncs with plans.lol.
 * 📱 [app.plans.lol](https://app.plans.lol) A personal dashboard and [iOS app for organizing daily life and tasks](https://apps.apple.com/us/app/plans-lol/id6703607762).
 * 📘 [InboxLit](https://github.com/sivori/InboxLit) A minimalist service that delivers one chapter (or part) of an ePub to your inbox each morning. 
 * 📊 [Slack Analytics Bot](#) A Slack bot that automatically posts Google Analytics and other key metrics directly to Slack channels.
