@@ -1,7 +1,8 @@
 ## 🚀 My Projects
 
 * 🏋️ [Exorcise](https://github.com/sivori/exorcise) iOS workout app - build custom workouts from 800+ exercises, track sets/reps/weight.
-* ⚡️ [GitStreak](https://github.com/sivori/git-streak) macOS menubar app to track your git commit streak. 
+* ⚡️ [GitStreak](https://github.com/sivori/git-streak) macOS menubar app to track your git commit streak.
+* ⏱️ [ClockifyMenu](https://github.com/sivori/clockify-menu) macOS menubar app for quick time tracking with Clockify.
 * 🎫 [jira-cli](https://github.com/sivori/jira-cli) CLI for JIRA, inspired by gh - work with issues, sprints, and epics from the terminal.
 * 🔍 [gsc-cli](https://github.com/sivori/gsc-cli) CLI for Google Search Console - pull top queries, compare date ranges, export CSVs, flag ranking drops.
 * 🪙 [TokenStatus](https://github.com/sivori/tokenstatus) A native macOS menubar app that tracks and displays real-time token usage and cost.
