@@ -1,5 +1,6 @@
 ## 🚀 My Projects
 
+* 📰 [EnergyWatch](https://energywatch.incentives.work) AI-powered energy news dashboard - aggregates 100+ sources, generates summaries and impact assessments.
 * 🏋️ [Exorcise](https://github.com/sivori/exorcise) iOS workout app - build custom workouts from 800+ exercises, track sets/reps/weight.
 * ⚡️ [GitStreak](https://github.com/sivori/git-streak) macOS menubar app to track your git commit streak.
 * 🗡️ [République](https://github.com/sivori/republique) macOS menubar app showing the French Revolutionary Calendar, decimal time, and guillotine counter.
