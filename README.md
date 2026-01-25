@@ -1,5 +1,6 @@
 ## 🚀 My Projects
 
+* 🎮 [Quest Productivity](https://github.com/sivori/quest-productivity) RPG-style productivity app - manage tasks as quests in a 2D game world, syncs with plans.lol.
 * 📰 [EnergyWatch](https://energywatch.incentives.work) AI-powered energy news dashboard - aggregates 100+ sources, generates summaries and impact assessments.
 * 🏋️ [Exorcise](https://github.com/sivori/exorcise) iOS workout app - build custom workouts from 800+ exercises, track sets/reps/weight.
 * ⚡️ [GitStreak](https://github.com/sivori/git-streak) macOS menubar app to track your git commit streak.
