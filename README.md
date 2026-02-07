@@ -32,7 +32,8 @@
 <!--START_SECTION:waka-->
 
 ```txt
-Other   1 hr 39 mins    █████████████████████████   100.00 %
+Other   2 hrs 50 mins   █████████████████████████   99.45 %
+JSON    0 secs          ░░░░░░░░░░░░░░░░░░░░░░░░░   00.55 %
 ```
 
 <!--END_SECTION:waka-->
