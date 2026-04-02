@@ -1,5 +1,6 @@
 ## 🚀 My Projects
 
+* 🧹 [Chores](https://github.com/sivori/chores) Family chores app — kids interact via SMS on Apple Watches, parents manage via web dashboard.
 * ⏳ [Tab Decay](#) Chrome extension that fades tabs by inactivity and offers to bookmark & close stale ones.
 * 📝 [TLDR Sidebar](#) Chrome extension side panel that summarizes any page using an LLM.
 * 🧭 [Rocinante](#) A travel app that optimizes for serendipity, wonder, and narrative.
