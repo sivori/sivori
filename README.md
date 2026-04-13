@@ -1,6 +1,7 @@
 ## 🚀 My Projects
 
 * 👁️ [Vizier](https://github.com/sivori/vizier) macOS menu-bar app that analyzes faces during video calls — rPPG heart rate and real-time emotion detection with a live SwiftUI overlay.
+* ⚔️ [Quixotic](https://github.com/sivori/quixotic) Two AI advisors — Don Quixote and Sancho Panza — debate your questions in streaming dialogue at the terminal.
 * 🧹 [Chores](https://github.com/sivori/chores) Family chores app — kids interact via SMS on Apple Watches, parents manage via web dashboard.
 * ⏳ [Tab Decay](#) Chrome extension that fades tabs by inactivity and offers to bookmark & close stale ones.
 * 📝 [TLDR Sidebar](#) Chrome extension side panel that summarizes any page using an LLM.
