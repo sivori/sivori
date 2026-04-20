@@ -31,7 +31,7 @@
 
 
 ## 🔥 Contribution Streak
-[![GitHub Streak](https://github-readme-streak-stats-murex-one.vercel.app/?user=sivori&theme=nightowl&hide_border=true&card_width=800&card_height=200&ring=EBE011&fire=EB9B1B&theme=dark&show_milestones=true&animate_fire=true&show_sparkline=true&show_heatmap=true&background=45%2C2F1EEB%2CEB5454)](https://git.io/streak-stats)
+[![GitHub Streak]([https://github-readme-streak-stats-murex-one.vercel.app/?user=sivori&theme=nightowl&hide_border=true&card_width=800&card_height=200&ring=EBE011&fire=EB9B1B&theme=dark&show_milestones=true&animate_fire=true&show_sparkline=true&show_heatmap=true&background=45%2C2F1EEB%2CEB5454](https://github-readme-streak-stats-murex-one.vercel.app?user=sivori&theme=algolia&show_heatmap=true&show_milestones=true&animate_fire=true&disable_animations=true&card_width=850&card_height=300))](https://git.io/streak-stats)
 
 ![](http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=sivori&theme=nightowl)
 
