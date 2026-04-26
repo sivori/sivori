@@ -1,5 +1,6 @@
 ## 🚀 My Projects
 
+* 🚨 [If You Don't, Everyone Dies](https://oreveryonedies.com) Pull a small life-improving mission, set a deadline, get a buddy to verify. Civilization is counting on it.
 * 🎹 [Chiptune Composer](https://music-smoky-phi.vercel.app) In-browser 8-bit tracker — pulse, triangle, and noise channels with multi-pattern song mode.
 * 👁️ [Vizier](https://github.com/sivori/vizier) macOS menu-bar app that analyzes faces during video calls — rPPG heart rate and real-time emotion detection.
 * ⚔️ [Quixotic](https://github.com/sivori/quixotic) Two AI advisors — Don Quixote and Sancho Panza — debate your questions in streaming dialogue at the terminal.
