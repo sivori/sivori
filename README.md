@@ -12,8 +12,8 @@ https://projects.sivori.xyz/
 <!--START_SECTION:waka-->
 
 ```txt
-Other      7 hrs 18 mins         ██████████████████████▓░░   90.86 %
-Markdown   44 mins               ██▒░░░░░░░░░░░░░░░░░░░░░░   09.14 %
+Other      11 hrs 5 mins         ██████████████████████▒░░   89.73 %
+Markdown   1 hr 16 mins          ██▓░░░░░░░░░░░░░░░░░░░░░░   10.27 %
 ```
 
 <!--END_SECTION:waka-->
