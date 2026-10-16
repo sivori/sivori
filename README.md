@@ -12,11 +12,11 @@ https://projects.sivori.xyz/
 <!--START_SECTION:waka-->
 
 ```txt
-Other        5 hrs 16 mins         █████████████▓░░░░░░░░░░░   54.10 %
-HTML         56 mins               ██▒░░░░░░░░░░░░░░░░░░░░░░   09.66 %
-Python       54 mins               ██▒░░░░░░░░░░░░░░░░░░░░░░   09.36 %
-TypeScript   38 mins               █▓░░░░░░░░░░░░░░░░░░░░░░░   06.56 %
-JavaScript   37 mins               █▓░░░░░░░░░░░░░░░░░░░░░░░   06.47 %
+Other        4 hrs 24 mins         █████████▓░░░░░░░░░░░░░░░   38.62 %
+JavaScript   1 hr 28 mins          ███▒░░░░░░░░░░░░░░░░░░░░░   12.95 %
+Svelte       1 hr 6 mins           ██▒░░░░░░░░░░░░░░░░░░░░░░   09.75 %
+HTML         55 mins               ██░░░░░░░░░░░░░░░░░░░░░░░   08.10 %
+Python       54 mins               ██░░░░░░░░░░░░░░░░░░░░░░░   08.01 %
 ```
 
 <!--END_SECTION:waka-->
