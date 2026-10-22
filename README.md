@@ -8,18 +8,4 @@ https://projects.sivori.xyz/
 <!-- ![](http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=sivori&theme=nightowl) -->
 
 
-## ⏰ Weekly Development Breakdown
-<!--START_SECTION:waka-->
-
-```txt
-Markdown     11 hrs 8 mins         ████████▓░░░░░░░░░░░░░░░░   34.22 %
-Other        10 hrs 59 mins        ████████▒░░░░░░░░░░░░░░░░   33.76 %
-Text         2 hrs 59 mins         ██▒░░░░░░░░░░░░░░░░░░░░░░   09.21 %
-TypeScript   1 hr 47 mins          █▒░░░░░░░░░░░░░░░░░░░░░░░   05.48 %
-JavaScript   1 hr 34 mins          █▒░░░░░░░░░░░░░░░░░░░░░░░   04.82 %
-```
-
-<!--END_SECTION:waka-->
-
-
 
